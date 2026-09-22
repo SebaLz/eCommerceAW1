@@ -19,7 +19,7 @@ body {
     line-height: 1.5;
 }
 
-.head {
+.header {
     background: var(--negro);
     color: var(--texto);
     border-bottom: 3px solid var(--rojo);
@@ -73,7 +73,8 @@ body {
     font-weight: bold;
 }
 
-.container {
+.container,
+.contenedor {
     max-width: 1100px;
     margin: 0 auto;
     padding: 56px 24px;
@@ -89,6 +90,50 @@ body {
 
 .introduccion {
     margin-bottom: 42px;
+}
+
+.confianza {
+    margin-bottom: 48px;
+}
+
+.cuadricula-confianza {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tarjeta-confianza {
+    padding: 20px 16px;
+    border: 1px solid var(--borde);
+    border-top: 3px solid var(--rojo);
+    border-radius: 8px;
+    background: var(--panel);
+    text-align: center;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.tarjeta-confianza:hover {
+    transform: translateY(-3px);
+    border-color: var(--rojo);
+    box-shadow: 0 8px 20px rgba(227, 38, 46, 0.22);
+}
+
+.icono-confianza {
+    width: 36px;
+    height: 36px;
+    color: var(--rojo);
+    fill: currentColor;
+}
+
+.tarjeta-confianza h2 {
+    margin: 12px 0 6px;
+    font-size: 1.05rem;
+}
+
+.tarjeta-confianza p {
+    margin: 0;
+    color: var(--gris);
+    font-size: 0.9rem;
 }
 
 .contenido-inicio {
@@ -209,7 +254,32 @@ h2 {
 }
 
 .caja-formulario h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 2rem;
+}
+
+.icono-formulario {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--rojo);
+    fill: currentColor;
+}
+
+.caja-formulario label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono-campo {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--rojo);
+    fill: currentColor;
 }
 
 label {
@@ -262,9 +332,19 @@ button:focus {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .cuadricula-confianza {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 520px) {
     .marca {
         height: 60px;
+    }
+
+    .cuadricula-confianza {
+        grid-template-columns: 1fr;
     }
 }
 
