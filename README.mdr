@@ -9,3 +9,4 @@ Incluye:
 - Inicio
 - Formulario de login y  registro 
 - Categorías: Equipamiento, Ropa deportiva, Accesorios y Nutrición deportiva.
+- Introducción de Js. Creados productos y cards en base a información de Array productos. Creación de item/variable en LocalStorage para controlar Login y dinamizar navbar. Navbar dinamico segun login. Impresión de links de navbar en base a array navElements. Cambio dinamico de titulos de página segun array.
