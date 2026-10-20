@@ -242,6 +242,32 @@ h2 {
     font-size: 1.15rem;
 }
 
+.lista-productos .precio {
+    margin: 12px 0;
+    color: var(--texto);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.cantidad button {
+    width: 36px;
+    margin: 0;
+    padding: 6px;
+}
+
+.valor-cantidad {
+    min-width: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .container-autenticacion {
     max-width: 520px;
 }
