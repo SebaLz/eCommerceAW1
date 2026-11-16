@@ -6,6 +6,7 @@ Alumno: Sebastian Alcaraz
 
 - Proyecto publicado: [[Link Proyecto](https://sebalz.github.io/eCommerceAW1/)]
 - Repositorio: [[Repo]](https://github.com/SebaLz/eCommerceAW1)
+- Video: [[Link YT]](https://youtu.be/a8xGC8IGV0s)
 
 ## 1. Roadmap de desarrollo
 
